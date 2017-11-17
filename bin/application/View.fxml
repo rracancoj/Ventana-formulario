@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" prefHeight="400.0" prefWidth="650.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <children>
+      <SplitPane dividerPositions="0.6651234567901234" prefHeight="400.0" prefWidth="650.0">
+        <items>
+          <AnchorPane fx:id="bgl" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane prefHeight="398.0" prefWidth="428.0" style="-fx-background-color: #66339980;">
+                     <children>
+                        <Label layoutX="59.0" layoutY="151.0" prefHeight="75.0" prefWidth="214.0" text="Create your own account" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Tahoma" size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="59.0" layoutY="246.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-radius: 5px; -fx-background-color: white;" text="ABOUT US" textFill="#c94fa7">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="172.0" layoutY="245.0" prefHeight="27.0" prefWidth="84.0" style="-fx-border-color: white; -fx-border-radius: 5px;" text="SIGN IN" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="193.0">
+               <children>
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="34.0" promptText="First Name" />
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="72.0" promptText="Last Name" />
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="109.0" promptText="Username" />
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="146.0" promptText="E-mail" />
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="187.0" promptText="Password" />
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="228.0" promptText="Password" />
+                  <JFXTextField focusColor="#8e39a1" labelFloat="true" layoutX="40.0" layoutY="269.0" promptText="Phone Number" />
+                  <JFXToggleButton layoutX="24.0" layoutY="306.0" prefHeight="43.0" prefWidth="110.0" size="7.0" text="Under 18" textFill="#908c8c" toggleColor="#ae4cac" toggleLineColor="#da65d8" />
+                  <JFXButton layoutX="40.0" layoutY="349.0" style="-fx-border-color: purple; -fx-border-radius: 5px;" text="Get Started" textFill="#8a3084" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
